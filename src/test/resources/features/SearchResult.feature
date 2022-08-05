@@ -1,4 +1,4 @@
-@wip
+
   Feature:  As a user, I should be able to login as librarian. When I go to Users
     page, table
     should have following columns:

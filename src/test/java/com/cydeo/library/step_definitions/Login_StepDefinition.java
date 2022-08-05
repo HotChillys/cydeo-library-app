@@ -102,4 +102,8 @@ public class Login_StepDefinition {
         BrowserUtil.waitFor(2);
     }
 
+    @Then("account holder name should be {string}")
+    public void accountHolderNameShouldBe(String arg0) {
+        Assert.assertEquals(arg0, librarianDashboardPage.accountHolderName.getText());
+    }
 }

@@ -25,5 +25,8 @@ public class LibrarianDashboardPage {
     @FindBy(xpath = "//table[@id='tbl_users']//tr//th")
     public List<WebElement> columnNames;
 
+    @FindBy(id = "navbarDropdown")
+    public WebElement accountHolderName;
+
 
 }
