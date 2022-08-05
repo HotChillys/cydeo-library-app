@@ -17,7 +17,7 @@ Feature: Login with parameters
     Then dashboard should be displayed
     And there should be "667" users
   #number can be whatever you have there
-  @wip
+
   Scenario: Login as librarian same line
     Given I am on the login page
     When I login using "librarian11@library" and "fsRRgXxB"

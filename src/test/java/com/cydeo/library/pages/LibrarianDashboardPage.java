@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class LibrarianDashboardPage {
 
     public LibrarianDashboardPage() {
@@ -16,6 +18,12 @@ public class LibrarianDashboardPage {
 
     @FindBy(xpath = "//h2[@id='user_count']")
     public WebElement userCount;
+
+    @FindBy(xpath = "(//span[@class='title'])[2]")
+    public WebElement usersBtn;
+
+    @FindBy(xpath = "//table[@id='tbl_users']//tr//th")
+    public List<WebElement> columnNames;
 
 
 }
